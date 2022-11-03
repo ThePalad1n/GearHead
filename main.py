@@ -3,6 +3,8 @@ from hashlib import new
 from gear import Gear
 import TrainOfGears
 
+#rich changes
+#evan changes
 def display():
     while(True):
         print('1. New Gear\n2. Add Tooth\n3. Rotate Left\n4. Rotate Right')
