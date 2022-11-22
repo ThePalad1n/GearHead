@@ -73,9 +73,9 @@ class trainOfGears:
 
 
 
-
+'''
 ToG = trainOfGears()
 ToG.makeTrain("Gear")
 ToG.encode()
 ToG.decode()
-
+'''
