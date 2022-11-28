@@ -45,6 +45,18 @@ class Gear:
     def printGear(self):
         print(self.name, self.ag)
 
+    def length(self):
+        return len(self.ag)
+
+    def append(self, object):
+        self.ag.append(object)
+
+    def pop(self, pos):
+        return self.ag.pop(pos)
+
+    def insert(self, pos, object):
+        self.ag.insert(pos, object)
+
 '''
 gear = Gear()
 gear.name = 'A'
