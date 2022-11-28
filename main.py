@@ -6,6 +6,7 @@ from TrainOfGears import trainOfGears
 
 #rich changes
 #evan changes
+#take2
 def display():
     while(True):
         #print('1. New Gear\n2. Add Tooth\n3. Rotate Left\n4. Rotate Right')
