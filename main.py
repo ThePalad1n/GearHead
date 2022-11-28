@@ -10,7 +10,7 @@ from TrainOfGears import trainOfGears
 def display():
     while(True):
         #print('1. New Gear\n2. Add Tooth\n3. Rotate Left\n4. Rotate Right')
-        print('1. Insert Word or Phrase\n2. Encode\n3. Decode')
+        print('1. Insert Word or Phrase\n2. Encode\n3. Decode\n4. Exit')
         x=input()
         match x:
             case '1':
@@ -41,4 +41,6 @@ def display():
                 newG.rotR()
                 newG.printGear()
                 '''
+            case '4':
+                exit()
 display()
