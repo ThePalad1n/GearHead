@@ -8,7 +8,7 @@ import TrainOfGears
 #take2
 def display():
     while(True):
-        print('1. New Gear\n2. Add Tooth\n3. Rotate Left\n4. Rotate Right')
+        print('1. New Gear\n2. Add Tooth\n3. Rotate Left\n4. Rotate Right\n5. Exit')
         x=input()
         match x:
             case '1':
@@ -26,4 +26,6 @@ def display():
             case '4':
                 newG.rotR()
                 newG.printGear()
+            case '5':
+                exit()
 display()

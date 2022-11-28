@@ -5,3 +5,5 @@ modules.xml
 profiles_settings.xml
 .idea/.gitignore
 .idea/workspace.xml
+__pycache__\gear.cpython-310.pyc
+__pycache__\TrainOfGears.cpython-310.pyc
