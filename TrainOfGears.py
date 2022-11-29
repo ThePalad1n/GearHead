@@ -5,6 +5,7 @@ class trainOfGears:
         self.gear = Gear()
         self.left = Gear()
         self.right = Gear()
+
     def makeTrain(self, gear):
         self.gear.nameGear("Parent")
         self.left.nameGear("E1")
