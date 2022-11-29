@@ -40,6 +40,8 @@ class trainOfGears:
     def encode(self):
         y = self.gear.length()
         print(y)
+        with open('secret.txt', 'a') as f:
+            f.writelines('\nencode\n')
         for i in range(y - 1):
             self.pRotL()
             x = self.gear.pop(0)
@@ -57,8 +59,9 @@ class trainOfGears:
     def decode(self):
         y = self.gear.length()
         print(y)
+        with open('secret.txt', 'a') as f:
+            f.writelines('\ndecode\n')
         for i in range(y - 1):
-
             x = self.gear.pop(0)
             y = self.right.pop(-1)
             self.right.append(x)
