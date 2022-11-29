@@ -17,7 +17,8 @@ def display():
         print(" {======|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"| ")
         print("./o--000\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\' ")
         print()
-        print('1. Insert Word or Phrase\n2. Encode\n3. Decode')
+        print('1. Insert Word or Phrase\n2. Encode\n3. Decode\n4. Exit')
+
         x=input()
         match x:
             case '1':
@@ -48,4 +49,6 @@ def display():
                 newG.rotR()
                 newG.printGear()
                 '''
+            case '4':
+                exit()
 display()

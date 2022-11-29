@@ -44,7 +44,12 @@ class Gear:
 
     def printGear(self):
         print(self.name, self.ag)
-
+        x = str(self.ag)
+        y = str(self.name)
+        with open('secret.txt', 'a') as f:
+            f.writelines(y)
+            f.writelines(x)
+            f.writelines('\n')
     def length(self):
         return len(self.ag)
 

@@ -7,3 +7,4 @@ profiles_settings.xml
 .idea/workspace.xml
 venv
 *.pyc
+secret.txt
