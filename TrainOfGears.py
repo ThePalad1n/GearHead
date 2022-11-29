@@ -1,11 +1,13 @@
 
 from gear import Gear
 class trainOfGears:
+    # init
     def __init__(self):
         self.gear = Gear()
         self.left = Gear()
         self.right = Gear()
 
+    # inital gear
     def makeTrain(self, gear):
         self.gear.nameGear("Parent")
         self.left.nameGear("E1")
@@ -14,7 +16,7 @@ class trainOfGears:
         chars = [x for x in gear]
         self.gear.addTooth(chars)
 
-        for i in range(len(chars)):#currently have it as different numbers to ensure it's doing what it's supposed to
+        for i in range(len(chars)):
             Teeth += 1
             self.left.addTooth(Teeth)
             self.right.addTooth(Teeth)
@@ -24,7 +26,7 @@ class trainOfGears:
         self.gear.printGear()
         self.left.printGear()
         self.right.printGear()
-
+        
     def pRotL(self):
         self.gear.rotL()
         self.left.rotR()
@@ -40,6 +42,7 @@ class trainOfGears:
     def encode(self):
         y = self.gear.length()
         print(y)
+        # writing to text file
         with open('secret.txt', 'a') as f:
             f.writelines('\nencode\n')
         for i in range(y - 1):
@@ -59,6 +62,7 @@ class trainOfGears:
     def decode(self):
         y = self.gear.length()
         print(y)
+        # writing to text file
         with open('secret.txt', 'a') as f:
             f.writelines('\ndecode\n')
         for i in range(y - 1):
