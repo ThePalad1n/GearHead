@@ -80,6 +80,8 @@ class Gear:
     def length(self):
         return len(self.ag)
 
+    def getHalf(self):
+        return (self.length()//2) if(self.length() % 2 == 0) else ((self.length()+1)//2)
 
 
     def append(self, object):

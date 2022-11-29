@@ -8,7 +8,18 @@ from TrainOfGears import trainOfGears
 def display():
     # conditional for our main menu screen
     while(True):
+
+        #print('1. New Gear\n2. Add Tooth\n3. Rotate Left\n4. Rotate Right')
+        print("            ___                            _____                     _            ")
+        print("    o O O  / __|    ___    __ _      _ _  |_   _|    _ _   __ _     (_)    _ _    ")
+        print("   o      | (_ |   / -_)  / _` |    | '_|   | |     | '_| / _` |    | |   | ' \   ")
+        print("  TS__[O]  \___|   \___|  \__,_|   _|_|_   _|_|_   _|_|_  \__,_|   _|_|_  |_||_|  ")
+        print(" {======|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"|_|\"\"\"\"\"| ")
+        print("./o--000\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\' ")
+        print()
+
         print('1. Insert Word or Phrase\n2. Encode\n3. Decode\n4. Exit')
+
         x=input()
         match x:
             case '1':

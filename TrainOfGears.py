@@ -46,18 +46,23 @@ class trainOfGears:
         with open('secret.txt', 'a') as f:
             f.writelines('\nencode\n')
         for i in range(y - 1):
+            
             self.pRotL()
             x = self.gear.pop(0)
             y = self.right.pop(-1)
             self.right.append(x)
             self.gear.insert(0, y)
+            
             x = self.gear.pop(-1)
             y = self.left.pop(0)
             self.left.insert(0, x)
             self.gear.append(y)
+
+            #print
             self.gear.printGear()
-            self.right.printGear()
             self.left.printGear()
+            self.right.printGear()
+            
 
     def decode(self):
         y = self.gear.length()

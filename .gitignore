@@ -5,6 +5,6 @@ modules.xml
 profiles_settings.xml
 .idea/.gitignore
 .idea/workspace.xml
+venv
+*.pyc
 secret.txt
-__pycache__/TrainOfGears.cpython-310.pyc
-__pycache__/gear.cpython-310.pyc
