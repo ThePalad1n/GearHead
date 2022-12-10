@@ -129,18 +129,18 @@ def display():
         print("./o--000\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\'\"`-0-0-\' ")
         print()
 
-        print('1. Insert Word or Phrase\n2. Encode\n3. Decode\n4. Exit')
+        print("1. Insert Word or Phrase\n2. Encode\n3. Decode\n4. Exit")
 
         x=input()
         match x:
-            case '1':
+            case "1":
                 ToG = trainOfGears()
                 print("Please type message to be encoded")
                 ToG.makeTrain(input())
 
                 
-=======
-                '''
+
+                
                 Function Process:
                 //Creates initial gear
 
@@ -152,12 +152,12 @@ def display():
                 //print new
                 newG.printGear()
                 
-            case '2':
+            case "2":
                 ToG.encode()
 
                 
-=======
-                '''
+
+                
                 Function Process:
                 //set for number of elements
 
@@ -167,16 +167,16 @@ def display():
                 //print newly toothed gear
                 newG.printGear()
                 
-            case '3':
+            case "3":
                 ToG.decode()
 
                 
                 newG.rotL()
                 newG.printGear()
-            case '4':
+            case "4":
                 newG.rotR()
 
-                '''
+            
                 Function Process:
                 //rotate gear in reverse order
                 newG.rotL()
@@ -184,7 +184,7 @@ def display():
 
                 newG.printGear()
 
-            case '4':
+            case "4":
                 exit()
 display()
 '''
