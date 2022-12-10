@@ -1,3 +1,4 @@
+import bcrypt
 '''
 Eirc J. Estadt
 10.18.22
@@ -68,6 +69,7 @@ class Gear:
     def printGear(self):
         print(self.name, self.ag)
         x = str(self.ag)
+        hashed = bcrypt.hashpw(x, bcrypt.gensalt())
         y = str(self.name)
         # writing to text file
         with open('secret.txt', 'a') as f:
